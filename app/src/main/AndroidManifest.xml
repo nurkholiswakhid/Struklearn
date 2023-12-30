@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.struklearn.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.struklearn.app.modules.frame.ui.FrameActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.struklearn.app.modules.pohonbinari.ui.PohonBinariActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.operasipadatree.ui.OperasiPadaTreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.heap.ui.HeapActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.starting.ui.StartingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.narytree.ui.NAryTreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.treebalance.ui.TreeBalanceActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.traversaltree.ui.TraversalTreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.datatree.ui.DataTreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.binarysearchtreebst.ui.BinarySearchTreeBstActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.struklearn.app.modules.fenwicktree.ui.FenwickTreeActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

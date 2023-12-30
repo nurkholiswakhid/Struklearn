@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="traversalTreeVM" type="com.struklearn.app.modules.traversaltree.data.viewmodel.TraversalTreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameTraversalTree"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnstrukturdatat"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSTRUKTURDATAT"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtSTRUKTURDATAT}"
+                style="@style/txtMontserratromanmedium14" tools:text="@string/msg_struktur_data_t"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtTraversalTree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtTraversalTree}"
+                style="@style/txtMontserratromansemibold18_1" tools:text="@string/msg_traversal_tree"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDefinisiTraver"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtDefinisiTraver}"
+                style="@style/txtMontserratromansemibold8" tools:text="@string/msg_definisi_traver"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtDescription}"
+                style="@style/txtMontserratromanregular8" tools:text="@string/msg_traversal_pada"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTujuanTraversa"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtTujuanTraversa}"
+                style="@style/txtMontserratromansemibold8" tools:text="@string/msg_tujuan_traversa"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsefive"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseFive"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtMengaksesSetia"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMengaksesSetia}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_mengakses_setia"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsesix"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseSix"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtPemrosesanData"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtPemrosesanData}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_pemrosesan_data"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipseseven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseSeven"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtMembangunEkspr"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMembangunEkspr}"
+                    tools:text="@string/msg_membangun_ekspr" />
+            </LinearLayout>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMetodeTraversa"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtMetodeTraversa}"
+                style="@style/txtMontserratromansemibold8" tools:text="@string/msg_metode_traversa"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPreorderTraver"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtPreorderTraver}"
+                style="@style/txtMontserratromanregular8" tools:text="@string/msg_preorder_traver"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsesixteen"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseSixteen"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMengunjunginod"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.97"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMengunjunginod}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_mengunjungi_nod"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStacksetelahmengunj"
+                android:layout_width="@dimen/_268pxh"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh">
+
+                <TextView
+                    android:id="@+id/txtSetelahmengunj"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+
+                    android:gravity="top|start"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtSetelahmengunj}"
+                    tools:text="@string/msg_setelah_mengunj" />
+
+                <View
+                    android:id="@+id/viewEllipseTwentyThree"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtInorderTravers"
+                style="@style/txtMontserratromanregular8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtInorderTravers}"
+                tools:text="@string/msg_inorder_travers" />
+
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipseten"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTen"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMelakukantrave"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.96"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMelakukantrave}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_melakukan_trave"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipseeleven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseEleven"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMengunjunginodOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.97"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMengunjunginodOne}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_mengunjungi_nod2"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPostorderTrave"
+                style="@style/txtMontserratromanregular8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtPostorderTrave}"
+                tools:text="@string/msg_postorder_trave" />
+
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwelve"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwelve"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMelanjutkantra"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.97"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMelanjutkantra}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_melanjutkan_tra"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirteen"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtMelakukantraveOne"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMelakukantraveOne}"
+                    tools:text="@string/msg_melakukan_trave" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsefifteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseFifteen"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtMengunjunginodTwo"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.97"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMengunjunginodTwo}"
+                    tools:text="@string/msg_mengunjungi_nod3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsefourteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseFourteen"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtMelakukantraveTwo"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtMelakukantraveTwo}"
+                    tools:text="@string/msg_melakukan_trave2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowpostordertrave"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnpostordertrave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    android:layout_weight="0.74"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtContohImplemen"
+                        style="@style/txtMontserratromanregular8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{traversalTreeVM.traversalTreeModel.txtContohImplemen}"
+                        tools:text="@string/msg_contoh_implemen2" />
+
+                    <TextView
+                        android:id="@+id/txtMisalkankitam"
+                        style="@style/txtMontserratromanregular8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{traversalTreeVM.traversalTreeModel.txtMisalkankitam}"
+                        tools:text="@string/msg_misalkan_kita_m" />
+
+                    <TextView
+                        android:id="@+id/txtPreorderTraverOne"
+                        style="@style/txtMontserratromanregular8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{traversalTreeVM.traversalTreeModel.txtPreorderTraverOne}"
+                        tools:text="@string/msg_preorder_traver" />
+
+                    <LinearLayout
+                        android:id="@+id/linearRowellipseseventeen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/viewEllipseSeventeen"
+                            android:layout_width="@dimen/_6pxh"
+                            android:layout_height="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                        <TextView
+                            android:id="@+id/txtOutputABD"
+                            style="@style/txtMontserratromanregular8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4pxh"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@{traversalTreeVM.traversalTreeModel.txtOutputABD}"
+                            tools:text="@string/msg_output_a_b_d" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frameStackellipseeighteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp">
+
+                        <View
+                            android:id="@+id/viewEllipseEighteen"
+                            android:layout_width="@dimen/_6pxh"
+                            android:layout_height="@dimen/_6pxh"
+                            android:layout_gravity="top|start"
+                            android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                        <TextView
+                            android:id="@+id/txtDescriptionOne"
+                            style="@style/txtMontserratromanregular8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|end"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:gravity="top|start"
+                            android:text="@{traversalTreeVM.traversalTreeModel.txtDescriptionOne}"
+                            tools:text="@string/msg_penjelasan_men" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageImageTwo"
+                    imageRes="@{@drawable/img_image1}"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_image1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtInorderTraversOne"
+                style="@style/txtMontserratromanregular8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtInorderTraversOne}"
+                tools:text="@string/msg_inorder_travers" />
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsenineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseNineteen"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtOutputDBE"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtOutputDBE}"
+                    tools:text="@string/msg_output_d_b_e" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStackellipsetwenty"
+                android:layout_width="@dimen/_260pxh"
+                android:layout_height="44dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh">
+
+                <View
+                    android:id="@+id/viewEllipseTwenty"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_gravity="top|start"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionTwo"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtDescriptionTwo}"
+                    tools:text="@string/msg_penjelasan_mel" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtPostorderTraveOne"
+                style="@style/txtMontserratromanregular8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{traversalTreeVM.traversalTreeModel.txtPostorderTraveOne}"
+                tools:text="@string/msg_postorder_trave" />
+
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwentyone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwentyOne"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOutputDEB"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtOutputDEB}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_output_d_e_b"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwentytwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwentyTwo"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtDescriptionThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{traversalTreeVM.traversalTreeModel.txtDescriptionThree}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/msg_penjelasan_mel2"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnQuiz"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_7pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_quiz"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_5" tools:text="@string/lbl_quiz"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

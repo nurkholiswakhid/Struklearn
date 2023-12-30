@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="pohonBinariVM" type="com.struklearn.app.modules.pohonbinari.data.viewmodel.PohonBinariVM"/>
+    </data>
+    <FrameLayout android:id="@+id/framePohonBinari"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnstrukturdatat"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSTRUKTURDATAT"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{pohonBinariVM.pohonBinariModel.txtSTRUKTURDATAT}"
+                style="@style/txtMontserratromanmedium14" tools:text="@string/msg_struktur_data_t"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtPohonBinariK"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:text="@{pohonBinariVM.pohonBinariModel.txtPohonBinariK}"
+                style="@style/txtMontserratromansemibold18_1" tools:text="@string/msg_pohon_binari_k"/>
+            <FrameLayout android:id="@+id/frameStackkonseppohonbi"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_73pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_300pxh">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtKonsepPohonBi"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtKonsepPohonBi}"
+                    style="@style/txtMontserratromansemibold10" tools:text="@string/msg_konsep_pohon_bi"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtDescription"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtDescription}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_pohon_binari_ad"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackdescriptionOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_152pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_302pxh">
+
+                <TextView
+                    android:id="@+id/txtDescriptionOne"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="258dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginEnd="@dimen/_10pxh"
+
+                    android:gravity="top|left"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtDescriptionOne}"
+                    tools:text="@string/msg_pohon_binari_da" />
+
+                <TextView
+                    android:id="@+id/txtImplementasiPo"
+                    style="@style/txtMontserratromansemibold10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_61pxv"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtImplementasiPo}"
+                    tools:text="@string/msg_implementasi_po" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionTwo"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_3pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtDescriptionTwo}"
+                    tools:text="@string/msg_pohon_binari_da2" />
+
+                <ImageView
+                    android:id="@+id/imageImageTwo"
+                    imageRes="@{@drawable/img_image1}"
+                    android:layout_width="@dimen/_60pxh"
+                    android:layout_height="@dimen/_71pxh"
+                    android:layout_gravity="top|end"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_image1" />
+
+                <TextView
+                    android:id="@+id/txtStrukturDataP"
+                    style="@style/txtMontserratromanmedium10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_60pxv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtStrukturDataP}"
+                    tools:text="@string/msg_struktur_data_p" />
+
+                <TextView
+                    android:id="@+id/txtOperasiDasarp"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:singleLine="true"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtOperasiDasarp}"
+                    tools:text="@string/msg_operasi_dasar_p" />
+
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtBeberapaoperas"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="15dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{pohonBinariVM.pohonBinariModel.txtBeberapaoperas}"
+                style="@style/txtMontserratromanregular10" tools:text="@string/msg_beberapa_operas"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipseten"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTen"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtPenambahanNode"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtPenambahanNode}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_penambahan_node"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsefive"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseFive"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_27pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtDescriptionThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtDescriptionThree}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_traversal_pohon"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipseeleven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseEleven"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtPencarianNode"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtPencarianNode}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_pencarian_node"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwelve"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwelve"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_17pxv"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtPenghapusanNod"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtPenghapusanNod}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_penghapusan_nod"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtContohImplemen"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9pxh"
+
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{pohonBinariVM.pohonBinariModel.txtContohImplemen}"
+                style="@style/txtMontserratromanregular10" tools:text="@string/msg_contoh_implemen"/>
+
+            <LinearLayout
+                android:id="@+id/linearRowdescriptionFour"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageImageOne"
+                    imageRes="@{@drawable/img_image1_105x129}"
+                    android:layout_width="@dimen/_129pxh"
+                    android:layout_height="@dimen/_105pxh"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_image1_105x129" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionFour"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_35pxv"
+                    android:layout_weight="0.57"
+                    android:text="@{pohonBinariVM.pohonBinariModel.txtDescriptionFour}"
+                    tools:text="@string/msg_dengan_represen" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnQuiz"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_7pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_quiz"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_5" tools:text="@string/lbl_quiz"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

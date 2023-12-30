@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="startingVM" type="com.struklearn.app.modules.starting.data.viewmodel.StartingVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackresearchhdone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageResearchHDOne"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_282pxh"
+            android:layout_marginBottom="@dimen/_133pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_133pxv"
+            android:layout_width="@dimen/_282pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_researchhd1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_researchhd1"/>
+        <ImageView android:id="@+id/imageEllipseTwo"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_403pxh"
+            android:layout_marginBottom="@dimen/_105pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_105pxv"
+            android:layout_width="@dimen/_55pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_ellipse2_403x55}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_403x55"/>
+        <TextView android:id="@+id/txtSelamatdatang"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_94pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_94pxv"
+            android:layout_width="wrap_content"
+            android:text="@{startingVM.startingModel.txtSelamatdatang}"
+            style="@style/txtMontserratromansemibold21" tools:text="@string/msg_selamat_datang"/>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txtTempatdimana"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_157pxv"
+            android:layout_marginEnd="@dimen/_33pxh"
+            android:layout_marginStart="@dimen/_33pxh"
+            android:layout_marginTop="@dimen/_157pxv"
+            android:layout_width="match_parent"
+            android:text="@{startingVM.startingModel.txtTempatdimana}"
+            style="@style/txtMontserratromanregular13" tools:text="@string/msg_tempat_di_mana"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnGetStarted"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/lbl_get_started"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+        <ImageView android:id="@+id/imageEllipseThree"
+            android:layout_gravity="top|end"
+            android:layout_height="@dimen/_243pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_94pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_ellipse3}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse3"/>
+    </FrameLayout>
+</layout>

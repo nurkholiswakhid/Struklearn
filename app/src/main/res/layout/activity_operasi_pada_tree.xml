@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="operasiPadaTreeVM" type="com.struklearn.app.modules.operasipadatree.data.viewmodel.OperasiPadaTreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameOperasipadaTr"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+        <LinearLayout
+            android:id="@+id/linearColumnstrukturdatat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSTRUKTURDATAT"
+                style="@style/txtMontserratromanmedium14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtSTRUKTURDATAT}"
+                tools:text="@string/msg_struktur_data_t" />
+
+            <TextView
+                android:id="@+id/txtOperasiPenamb"
+                style="@style/txtMontserratromansemibold16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="left"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtOperasiPenamb}"
+                tools:text="@string/msg_operasi_penamb" />
+
+            <TextView
+                android:id="@+id/txtPenambahanNode"
+                style="@style/txtMontserratromansemibold8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPenambahanNode}"
+                tools:text="@string/msg_penambahan_node2" />
+
+            <TextView
+                android:id="@+id/txtPenambahanNodeOne"
+                style="@style/txtMontserratromanmedium8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPenambahanNodeOne}"
+                tools:text="@string/msg_penambahan_node3" />
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnellipsethirty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_weight="0.02"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/viewEllipseThirty"
+                        android:layout_width="@dimen/_6pxh"
+                        android:layout_height="@dimen/_6pxh"
+                        android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                    <View
+                        android:id="@+id/viewEllipseThirtyOne"
+                        android:layout_width="@dimen/_6pxh"
+                        android:layout_height="@dimen/_6pxh"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:background="@drawable/rectangle_bg_black_900_radius_3" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackdescription"
+                    android:layout_width="349dp"
+                    android:layout_height="@dimen/_30pxv"
+                    android:layout_marginStart="@dimen/_3pxh">
+
+                    <TextView
+                        android:id="@+id/txtDescription"
+                        style="@style/txtMontserratromanregular8"
+                        android:layout_width="351dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:gravity="top|start"
+                        android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtDescription}"
+                        tools:text="@string/msg_untuk_menambahk" />
+
+                    <TextView
+                        android:id="@+id/txtJikatreemasih"
+                        style="@style/txtMontserratromanregular8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:singleLine="true"
+                        android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtJikatreemasih}"
+                        tools:text="@string/msg_jika_tree_masih" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtytwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtyTwo"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionOne"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtDescriptionOne}"
+                    tools:text="@string/msg_jika_tidak_kit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtContohPenambah"
+                style="@style/txtMontserratromanmedium8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtContohPenambah}"
+                tools:text="@string/msg_contoh_penambah" />
+
+            <TextView
+                android:id="@+id/txtMisalkankitai"
+                style="@style/txtMontserratromanregular8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtMisalkankitai}"
+                tools:text="@string/msg_misalkan_kita_i" />
+
+            <LinearLayout
+                android:id="@+id/linearRowdescriptionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageImageOne"
+                    android:layout_width="@dimen/_55pxh"
+                    android:layout_height="@dimen/_44pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image1_105x129"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_image1_105x129" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionTwo"
+                    style="@style/txtMontserratromanregular7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_weight="0.81"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtDescriptionTwo}"
+                    tools:text="@string/msg_kita_bandingkan" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPenghapusanNod"
+                style="@style/txtMontserratromansemibold8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPenghapusanNod}"
+                tools:text="@string/msg_penghapusan_nod3" />
+
+            <FrameLayout
+                android:id="@+id/frameStackpenghapusannodOne"
+                android:layout_width="@dimen/_246pxh"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh">
+
+                <TextView
+                    android:id="@+id/txtPenghapusanNodOne"
+                    style="@style/txtMontserratromanmedium8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPenghapusanNodOne}"
+                    tools:text="@string/msg_penghapusan_nod4" />
+
+                <TextView
+                    android:id="@+id/txtPenghapusannodTwo"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPenghapusannodTwo}"
+                    tools:text="@string/msg_penghapusan_nod5" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtythree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtyThree"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtNodeDaunNode"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtNodeDaunNode}"
+                    tools:text="@string/msg_node_daun_node" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtyfour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtyFour"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtNodedenganSat"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtNodedenganSat}"
+                    tools:text="@string/msg_node_dengan_sat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtyfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="11dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtyFive"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionThree"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtDescriptionThree}"
+                    tools:text="@string/msg_node_dengan_dua" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtContohPenghapu"
+                style="@style/txtMontserratromanmedium8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtContohPenghapu}"
+                tools:text="@string/msg_contoh_penghapu" />
+
+            <TextView
+                android:id="@+id/txtMisalkankitaiOne"
+                style="@style/txtMontserratromanregular8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtMisalkankitaiOne}"
+                tools:text="@string/msg_misalkan_kita_i2" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="1."
+                    style="@style/txtMontserratromanregular8"
+                    />
+
+                <TextView
+                    android:id="@+id/txtDescriptionFour"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:gravity="left"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtDescriptionFour}"
+                    tools:text="@string/msg_node_dengan_nil" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtNilainode10d"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtNilainode10d}"
+                    tools:text="@string/msg_nilai_node_10_d" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="2." />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtNodedengannil"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtNodedengannil}"
+                    tools:text="@string/msg_node_dengan_nil2" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="3." />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtPencarianNode"
+                style="@style/txtMontserratromansemibold8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPencarianNode}"
+                tools:text="@string/msg_pencarian_node2" />
+
+            <TextView
+                android:id="@+id/txtPrinsipPencari"
+                style="@style/txtMontserratromanmedium8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPrinsipPencari}"
+                tools:text="@string/msg_prinsip_pencari" />
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtysix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtySix"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtPencariandilak"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtPencariandilak}"
+                    tools:text="@string/msg_pencarian_dilak" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtyseven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtySeven"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionFive"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtDescriptionFive}"
+                    tools:text="@string/msg_jika_nilai_yang" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStackellipsethirtyeight"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:baselineAligned="false">
+
+                <View
+                    android:id="@+id/viewEllipseThirtyEight"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_gravity="top|start"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtJikanilainode"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="342dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtJikanilainode}"
+                    tools:text="@string/msg_jika_nilai_node" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtContohPencaria"
+                style="@style/txtMontserratromanmedium8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtContohPencaria}"
+                tools:text="@string/msg_contoh_pencaria" />
+
+            <TextView
+                android:id="@+id/txtMisalkankitaiTwo"
+                style="@style/txtMontserratromanregular8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtMisalkankitaiTwo}"
+                tools:text="@string/msg_misalkan_kita_i3" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="13dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="1." />
+
+                <TextView
+                    android:id="@+id/txtNilai6dibandi"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtNilai6dibandi}"
+                    tools:text="@string/msg_nilai_6_dibandi" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtKarena6lebih"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtKarena6lebih}"
+                    tools:text="@string/msg_karena_6_lebih" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/txtMontserratromanregular8"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="2." />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/txtMontserratromanregular8"                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="17dp"
+                    android:text="3." />
+
+                <TextView
+                    android:id="@+id/txtNilai6dibandiOne"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtNilai6dibandiOne}"
+                    tools:text="@string/msg_nilai_6_dibandi2" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/txtMontserratromanregular8"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="4." />
+
+                <TextView
+                    android:id="@+id/txtKarena6lebihOne"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtKarena6lebihOne}"
+                    tools:text="@string/msg_karena_6_lebih2" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/txtMontserratromanregular8"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="5." />
+
+                <TextView
+                    android:id="@+id/txtNilai6ditemuk"
+                    style="@style/txtMontserratromanregular8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@{operasiPadaTreeVM.operasiPadaTreeModel.txtNilai6ditemuk}"
+                    tools:text="@string/msg_nilai_6_ditemuk" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQuiz"
+                style="@style/btnSolidRounded_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_7pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_quiz"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_quiz" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

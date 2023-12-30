@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="binarySearchTreeBstVM" type="com.struklearn.app.modules.binarysearchtreebst.data.viewmodel.BinarySearchTreeBstVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameBinarySearchT"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnstrukturdatat"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSTRUKTURDATAT"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtSTRUKTURDATAT}"
+                style="@style/txtMontserratromanmedium14" tools:text="@string/msg_struktur_data_t"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtBinarySearchT"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtBinarySearchT}"
+                style="@style/txtMontserratromansemibold18_1" tools:text="@string/msg_binary_search_t2"/>
+
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtDefinisiBinary"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDefinisiBinary}"
+                style="@style/txtMontserratromansemibold10" tools:text="@string/msg_definisi_binary"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_width="match_parent"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDescription}"
+                style="@style/txtMontserratromanregular10" tools:text="@string/msg_binary_search_t3"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTimeZone"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtTimeZone}"
+                style="@style/txtMontserratromansemibold10" tools:text="@string/lbl_sifat_sifat_bst"/>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsetwentyfour"
+                android:layout_width="356dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseTwentyFour"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="@dimen/_37pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionOne"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDescriptionOne}"
+                    tools:text="@string/msg_sifat_pencarian" />
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwentythree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwentyThree"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_17pxv"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="@dimen/_6pxh"/>
+
+                <TextView
+                    android:id="@+id/txtSifatRekursif"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtSifatRekursif}"
+                    tools:text="@string/msg_sifat_rekursif" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStacktimezoneOne"
+                android:layout_width="174dp"
+                android:layout_height="@dimen/_22pxv"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh">
+
+                <TextView
+                    android:id="@+id/txtTimeZoneOne"
+                    style="@style/txtMontserratromansemibold10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:singleLine="true"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtTimeZoneOne}"
+                    tools:text="@string/msg_operasi_pada_bs" />
+
+                <TextView
+                    android:id="@+id/txtPenambahanNode"
+                    style="@style/txtMontserratromanmedium10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:singleLine="true"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtPenambahanNode}"
+                    tools:text="@string/lbl_penambahan_node" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackdescriptionTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_46pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="5dp"
+                android:layout_width="@dimen/_297pxh">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtDescriptionTwo"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDescriptionTwo}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_pada_saat_menam"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPencarianNode"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="39dp"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtPencarianNode}"
+                    style="@style/txtMontserratromanmedium10" tools:text="@string/lbl_pencarian_node"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwentyfive"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="11dp"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwentyFive"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtPencariandilak"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtPencariandilak}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_pencarian_dilak"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStackellipsetwentysix"
+                android:layout_width="@dimen/_300pxh"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="@dimen/_10pxh">
+
+                <View
+                    android:id="@+id/viewEllipseTwentySix"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_gravity="top|start"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionThree"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:gravity="top|start"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDescriptionThree}"
+                    tools:text="@string/msg_jika_nilai_yang" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtPenghapusanNod"
+                style="@style/txtMontserratromanmedium10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtPenghapusanNod}"
+                tools:text="@string/msg_penghapusan_nod2" />
+
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtAdatigaskenar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtAdatigaskenar}"
+                style="@style/txtMontserratromanregular10" tools:text="@string/msg_ada_tiga_skenar"/>
+
+            <FrameLayout
+                android:layout_width="@dimen/_300pxh"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/_1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionFour"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14dp"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:gravity="left"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDescriptionFour}"
+                    tools:text="@string/msg_node_tersebut_a" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/_300pxh"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+
+                    android:text="@string/_2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14dp"
+                    style="@style/txtMontserratromanregular10"
+                    android:text="@string/node_memiliki_satu_anak" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStacknodememilikid"
+                android:layout_width="@dimen/_300pxh"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="@dimen/_10pxh"
+               >
+
+                <TextView
+                    android:id="@+id/txtNodememilikid"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14dp"
+
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtNodememilikid}"
+                    tools:text="@string/msg_node_memiliki_d" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="start"
+                    android:text="@string/_3"
+                    android:textColor="@color/black"
+                    style="@style/txtMontserratromanregular10"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtTimeZoneTwo"
+                style="@style/txtMontserratromansemibold10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtTimeZoneTwo}"
+                tools:text="@string/lbl_keuntungan_bst" />
+
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwentyseven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwentySeven"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_28pxv"
+                    android:layout_marginTop="4dp" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtDescriptionFive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDescriptionFive}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_pencarian_cepat"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwentyeight"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwentyEight"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginTop="4dp" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtTimeZoneThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtTimeZoneThree}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_pengurutan_otom"
+                    />
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsetwentynine"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_3"
+                    android:id="@+id/viewEllipseTwentyNine"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginBottom="@dimen/_29pxv"
+                    android:layout_marginTop="4dp" android:layout_width="@dimen/_6pxh"/>
+                <TextView android:id="@+id/txtDescriptionSix"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp"
+                    android:text="@{binarySearchTreeBstVM.binarySearchTreeBstModel.txtDescriptionSix}"
+                    style="@style/txtMontserratromanregular10" tools:text="@string/msg_penghapusan_dan"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQuiz"
+                style="@style/btnSolidRounded_5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="28dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/lbl_quiz"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_quiz" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="treeBalanceVM" type="com.struklearn.app.modules.treebalance.data.viewmodel.TreeBalanceVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearTreeBalance"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtSTRUKTURDATAT"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{treeBalanceVM.treeBalanceModel.txtSTRUKTURDATAT}"
+            style="@style/txtMontserratromanmedium14" tools:text="@string/msg_struktur_data_t"/>
+        <TextView android:gravity="left"
+            android:id="@+id/txtTreeBalanceA"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:text="@{treeBalanceVM.treeBalanceModel.txtTreeBalanceA}"
+            style="@style/txtMontserratromansemibold18_1" tools:text="@string/msg_tree_balance_a"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtAVLTree"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{treeBalanceVM.treeBalanceModel.txtAVLTree}"
+            style="@style/txtMontserratromansemibold10" tools:text="@string/lbl_avl_tree"/>
+
+        <TextView
+            android:id="@+id/txtDescription"
+            style="@style/txtMontserratromanregular10"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:gravity="left"
+            android:text="@{treeBalanceVM.treeBalanceModel.txtDescription}"
+            tools:text="@string/msg_avl_tree_adalah" />
+
+        <FrameLayout
+            android:id="@+id/frameStackdescriptionOne"
+            android:layout_width="350dp"
+            android:layout_height="@dimen/_134pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_16pxh">
+
+            <TextView
+                android:id="@+id/txtDescriptionOne"
+                style="@style/txtMontserratromanregular10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:gravity="top|start"
+                android:text="@{treeBalanceVM.treeBalanceModel.txtDescriptionOne}"
+                tools:text="@string/msg_red_black_tree" />
+
+            <TextView
+                android:id="@+id/txtRedBlackTree"
+                style="@style/txtMontserratromansemibold10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{treeBalanceVM.treeBalanceModel.txtRedBlackTree}"
+                tools:text="@string/lbl_red_black_tree" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtPerbandingan"
+            style="@style/txtMontserratromansemibold10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{treeBalanceVM.treeBalanceModel.txtPerbandingan}"
+            tools:text="@string/lbl_perbandingan" />
+        <TextView android:gravity="left"
+            android:id="@+id/txtDescriptionTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:text="@{treeBalanceVM.treeBalanceModel.txtDescriptionTwo}"
+            style="@style/txtMontserratromanregular10" tools:text="@string/msg_perbedaan_utama"/>
+        <TextView android:gravity="left"
+            android:id="@+id/txtDescriptionThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_width="match_parent"
+            android:text="@{treeBalanceVM.treeBalanceModel.txtDescriptionThree}"
+            style="@style/txtMontserratromanregular10" tools:text="@string/msg_dalam_pemilihan"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnQuiz"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_35pxh"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_7pxv" android:singleLine="true"
+            android:text="@string/lbl_quiz" android:textAllCaps="false"
+            style="@style/btnSolidRounded_5" tools:text="@string/lbl_quiz"/>
+    </LinearLayout>
+</layout>

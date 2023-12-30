@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="fenwickTreeVM" type="com.struklearn.app.modules.fenwicktree.data.viewmodel.FenwickTreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameFenwickTree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+        <LinearLayout
+            android:id="@+id/linearColumnstrukturdatat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSTRUKTURDATAT"
+                style="@style/txtMontserratromanmedium14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{fenwickTreeVM.fenwickTreeModel.txtSTRUKTURDATAT}"
+                tools:text="@string/msg_struktur_data_t" />
+
+            <FrameLayout
+                android:id="@+id/frameStackfenwicktreeb"
+                android:layout_width="@dimen/_311pxh"
+                android:layout_height="@dimen/_107pxv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_11pxh">
+
+                <TextView
+                    android:id="@+id/txtFenwickTreeB"
+                    style="@style/txtMontserratromansemibold18_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtFenwickTreeB}"
+                    tools:text="@string/msg_fenwick_tree_b" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtDescription}"
+                    tools:text="@string/msg_fenwick_tree_j" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStackdescriptionOne"
+                android:layout_width="367dp"
+                android:layout_height="@dimen/_71pxv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="@dimen/_11pxh">
+
+                <TextView
+                    android:id="@+id/txtDescriptionOne"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtDescriptionOne}"
+                    tools:text="@string/msg_representasi_da" />
+
+                <View
+                    android:id="@+id/viewEllipseThirtySix"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtImplementasi"
+                    style="@style/txtMontserratromansemibold10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtImplementasi}"
+                    tools:text="@string/lbl_implementasi" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtyseven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtySeven"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_marginBottom="@dimen/_28pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionTwo"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_weight="0.98"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtDescriptionTwo}"
+                    tools:text="@string/msg_membangun_fenwi" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtOperasiPadaFe"
+                style="@style/txtMontserratromansemibold10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{fenwickTreeVM.fenwickTreeModel.txtOperasiPadaFe}"
+                tools:text="@string/msg_operasi_pada_fe" />
+
+            <LinearLayout
+                android:id="@+id/linearRowellipsethirtyeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewEllipseThirtyEight"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_39pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionThree"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_weight="0.98"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtDescriptionThree}"
+                    tools:text="@string/msg_penjumlahan_kum" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStackellipsethirtynine"
+                android:layout_width="369dp"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_marginEnd="@dimen/_11pxh">
+
+                <View
+                    android:id="@+id/viewEllipseThirtyNine"
+                    android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:background="@drawable/rectangle_bg_black_900_radius_3" />
+
+                <FrameLayout
+                    android:id="@+id/frameStackdescriptionFour"
+                    android:layout_width="346dp"
+                    android:layout_height="@dimen/_60pxv"
+                    android:layout_gravity="start"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/txtDescriptionFour"
+                        style="@style/txtMontserratromanregular10"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:gravity="top|start"
+                        android:text="@{fenwickTreeVM.fenwickTreeModel.txtDescriptionFour}"
+                        tools:text="@string/msg_pembaruan_nilai" />
+
+                    <TextView
+                        android:id="@+id/txtContohPengguna"
+                        style="@style/txtMontserratromansemibold10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{fenwickTreeVM.fenwickTreeModel.txtContohPengguna}"
+                        tools:text="@string/msg_contoh_pengguna" />
+
+                    <TextView
+                        android:id="@+id/txtMembangunFenwi"
+                        style="@style/txtMontserratromanregular10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="8dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{fenwickTreeVM.fenwickTreeModel.txtMembangunFenwi}"
+                        tools:text="@string/msg_membangun_fenwi2" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtMisalkankitam"
+                style="@style/txtMontserratromanregular10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="@{fenwickTreeVM.fenwickTreeModel.txtMisalkankitam}"
+                tools:text="@string/msg_misalkan_kita_m2" />
+
+            <EditText
+                android:id="@+id/etGroupFive"
+                style="@style/etSolid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:background="@drawable/rectangle_bg_black_900"
+                android:ellipsize="end"
+                android:hint="@string/msg_array_1_2_3"
+                android:inputType="text"
+                android:paddingStart="@dimen/_11pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_4pxv"
+                android:singleLine="true"
+                android:text="@={fenwickTreeVM.fenwickTreeModel.etGroupFiveValue}"
+                android:textColorHint="@color/white_A700"
+                tools:ignore="Autofill" />
+
+            <FrameLayout
+                android:id="@+id/frameStackfenwicktree"
+                android:layout_width="@dimen/_296pxh"
+                android:layout_height="@dimen/_30pxv"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_12pxh">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnfenwicktree"
+                    style="@style/groupStyleblack_900"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtFenwickTree"
+                        style="@style/txtCourierNewpsmt8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_marginEnd="@dimen/_58pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:text="@{fenwickTreeVM.fenwickTreeModel.txtFenwickTree}"
+                        tools:text="@string/msg_fenwick_tree" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtBerikutadalah"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:singleLine="true"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtBerikutadalah}"
+                    tools:text="@string/msg_berikut_adalah" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStackpenjumlahankum"
+                android:layout_width="382dp"
+                android:layout_height="@dimen/_82pxv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_marginTop="@dimen/_1pxv">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnpenjumlahankum"
+                    style="@style/groupStyleblack_900"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_26pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_26pxv"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPenjumlahanKum"
+                        style="@style/txtCourierNewpsmt8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{fenwickTreeVM.fenwickTreeModel.txtPenjumlahanKum}"
+                        tools:text="@string/msg_penjumlahan_kum2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtDescriptionFive"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="351dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtDescriptionFive}"
+                    tools:text="@string/msg_operasi_penjuml" />
+
+                <TextView
+                    android:id="@+id/txtOperasiPembaru"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtOperasiPembaru}"
+                    tools:text="@string/msg_operasi_pembaru" />
+
+                <TextView
+                    android:id="@+id/txtJikakitamempe"
+                    style="@style/txtMontserratromanregular10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:gravity="top|start"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtJikakitamempe}"
+                    tools:text="@string/msg_jika_kita_mempe" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearColumndescriptionSix"
+                style="@style/groupStyleblack_900"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDescriptionSix"
+                    style="@style/txtCourierNewpsmt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:gravity="start"
+                    android:text="@{fenwickTreeVM.fenwickTreeModel.txtDescriptionSix}"
+                    tools:text="@string/msg_fenwicktree_3" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQuiz"
+                style="@style/btnSolidRounded_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_7pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_quiz"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_quiz" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>
